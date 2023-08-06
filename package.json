@@ -12,6 +12,10 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@capacitor/android": "^5.2.2",
+		"@capacitor/cli": "^5.2.2",
+		"@capacitor/core": "^5.2.2",
+		"@capacitor/ios": "^5.2.2",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",

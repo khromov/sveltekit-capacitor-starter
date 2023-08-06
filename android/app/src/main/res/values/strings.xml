@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SvelteKit Starter</string>
+    <string name="title_activity_main">SvelteKit Starter</string>
+    <string name="package_name">se.khromov.starter</string>
+    <string name="custom_url_scheme">se.khromov.starter</string>
+</resources>
