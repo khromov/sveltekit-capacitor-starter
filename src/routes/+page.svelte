@@ -1,23 +1,37 @@
 <script>
+	import { StatusBar, Style } from '@capacitor/status-bar';
+	import { Preferences } from '@capacitor/preferences';
 	import Counter from '$lib/components/Counter.svelte';
+	import { onMount } from 'svelte';
+    
+	let count = 0;
+	onMount(async () => {
+		try {
+			await StatusBar.setStyle({ style: Style.Dark });
+		} catch (e) {
+			console.log(e);
+		}
+
+		const { value } = await Preferences.get({ key: 'count' });
+		count = value ? parseInt(value) : 0;
+	});
+
+	const onClick = async () => {
+		await Preferences.set({ key: 'count', value: count.toString() });
+	};
 </script>
 
 <div>
-    <Counter />
+	<Counter bind:count {onClick} />
 </div>
 
 <style>
-    div {
-        color: white;
-        
-        display: flex;
-        /* center */
-        align-items: center;
-        justify-content: center;
-        /* full height */
-        height: 100vh;
-
-        /* dark blue bg */
-        background-color: #0a2540;
-    }
+	div {
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		background-color: #0a2540;
+	}
 </style>
