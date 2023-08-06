@@ -1,2 +1,23 @@
-<h1>Welcome to SvelteKit + Capacitor!</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Counter from '$lib/components/Counter.svelte';
+</script>
+
+<div>
+    <Counter />
+</div>
+
+<style>
+    div {
+        color: white;
+        
+        display: flex;
+        /* center */
+        align-items: center;
+        justify-content: center;
+        /* full height */
+        height: 100vh;
+
+        /* dark blue bg */
+        background-color: #0a2540;
+    }
+</style>
