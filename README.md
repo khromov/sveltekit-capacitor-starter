@@ -4,9 +4,11 @@
 
 See this presentation that was given on This Week in Svelte:
 
-[<img src="https://github.com/khromov/sveltekit-capacitor-starter/assets/1207507/a465f6f8-e0f2-4074-a2ec-6f820f592b54">](https://www.youtube.com/watch?v=jfBjmczZwRc&t=405s)
+[YouTube Presentation link](https://www.youtube.com/watch?v=jfBjmczZwRc&t=405s)
 
-https://www.youtube.com/watch?v=jfBjmczZwRc&t=405s
+<img src="https://github.com/khromov/sveltekit-capacitor-starter/assets/1207507/a465f6f8-e0f2-4074-a2ec-6f820f592b54">
+
+[Presentation link](https://www.youtube.com/watch?v=jfBjmczZwRc&t=405s)
 
 This is a simple demo project of SvelteKit + Capacitor. It is not a complete starter but more of an example of a Capacitor setup. 
 
